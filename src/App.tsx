@@ -8,6 +8,7 @@ import PortfolioItem from './components/PortfolioItem';
 import QuizAppImg from './Images/quiz_bazzar.png';
 import TwitteryImg from './Images/twittery.png';
 import ReactTodoImg from './Images/React-Todo.png';
+import SlidepuzzleImg from './Images/Slidepuzzle-react.png'
 
 const App: React.FC = () => {
   const works = [
@@ -30,6 +31,13 @@ const App: React.FC = () => {
       description: 'Reactの勉強で作成したTodoアプリ。React + TailwindCSS + TypeScriptで作成した。',
       link: 'https://wak8810.github.io/React-TodoList/',
       github: 'https://github.com/Wak8810/React-TodoList'
+    },
+    {
+      imageSrc: SlidepuzzleImg,
+      title: '8パズル・15パズル',
+      description: 'スライドパズルを作成してみた。React + TailwindCSS + TypeScriptで作成した。',
+      link: 'https://wak8810.github.io/slidepuzzles-react/',
+      github: 'https://github.com/Wak8810/slidepuzzles-react'
     },
   ];
 
