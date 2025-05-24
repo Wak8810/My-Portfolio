@@ -8,7 +8,8 @@ import PortfolioItem from './components/PortfolioItem';
 import QuizAppImg from './Images/quiz_bazzar.png';
 import TwitteryImg from './Images/twittery.png';
 import ReactTodoImg from './Images/React-Todo.png';
-import SlidepuzzleImg from './Images/Slidepuzzle-react.png'
+import SlidepuzzleImg from './Images/Slidepuzzle-react.png';
+import AirocoNotifyImg from './Images/Airoco-Notify.png';
 
 const App: React.FC = () => {
   const works = [
@@ -18,6 +19,13 @@ const App: React.FC = () => {
       description: 'この作品は、3月中旬に参加したイベントで、3泊4日で、チーム開発で作成したものである。使用技術はRailsとBootstrapで、主にバックエンド側のルート設計、データベース設計や、Model、Controllerプログラムを作成した。githubのlinkは本体ではなく、コピーしたリポジトリ。',
       link: 'https://quiz-buzzar.kamaly-app.com/',
       github: 'https://github.com/Wak8810/cp_quiz_bazzar'
+    },
+    {
+      imageSrc: AirocoNotifyImg,
+      title: 'Airoco教室環境チェックシステム',
+      description: 'Airocoというサービスを利用して、大学の3箇所の教室からCO2濃度、温度、湿度の情報を取得し、独自の閾値によってスコアを決めてSlackで通知するアプリ。同時にDBにデータを登録して、Web上でも過去のデータを閲覧できるようにした。frontend：React + TailwindCSS + TypeScript backend：Python + Supabase',
+      link: 'https://wak8810.github.io/Airoco_Notify_System/',
+      github: 'https://github.com/Wak8810/Airoco_Notify_System'
     },
     {
       imageSrc: TwitteryImg,
