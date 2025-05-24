@@ -24,8 +24,8 @@ const App: React.FC = () => {
       imageSrc: AirocoNotifyImg,
       title: 'Airoco教室環境チェックシステム',
       description: 'Airocoというサービスを利用して、大学の3箇所の教室からCO2濃度、温度、湿度の情報を取得し、独自の閾値によってスコアを決めてSlackで通知するアプリ。同時にDBにデータを登録して、Web上でも過去のデータを閲覧できるようにした。frontend：React + TailwindCSS + TypeScript backend：Python + Supabase',
-      link: 'https://wak8810.github.io/slidepuzzles-react/',
-      github: 'https://github.com/Wak8810/slidepuzzles-react'
+      link: 'https://wak8810.github.io/Airoco_Notify_System/',
+      github: 'https://github.com/Wak8810/Airoco_Notify_System'
     },
     {
       imageSrc: TwitteryImg,
