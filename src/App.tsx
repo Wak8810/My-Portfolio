@@ -16,36 +16,47 @@ const App: React.FC = () => {
     {
       imageSrc: QuizAppImg,
       title: 'クイズバザール',
-      description: 'この作品は、3月中旬に参加したイベントで、3泊4日で、チーム開発で作成したものである。使用技術はRailsとBootstrapで、主にバックエンド側のルート設計、データベース設計や、Model、Controllerプログラムを作成した。githubのlinkは本体ではなく、コピーしたリポジトリ。',
+      description: 'この作品は、3月中旬に参加したイベントで、3泊4日で、チーム開発で作成したものである。主にバックエンド側のルート設計、データベース設計や、Model、Controllerプログラムを作成した。githubのlinkは本体ではなく、コピーしたリポジトリ。',
       link: 'https://quiz-buzzar.kamaly-app.com/',
-      github: 'https://github.com/Wak8810/cp_quiz_bazzar'
+      github: 'https://github.com/Wak8810/cp_quiz_bazzar',
+      frontend: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+      backend: ['Ruby on Rails'],
+      database: ['SQLite3']
     },
     {
       imageSrc: AirocoNotifyImg,
       title: 'Airoco教室環境チェックシステム',
-      description: 'Airocoというサービスを利用して、大学の3箇所の教室からCO2濃度、温度、湿度の情報を取得し、独自の閾値によってスコアを決めてSlackで通知するアプリ。同時にDBにデータを登録して、Web上でも過去のデータを閲覧できるようにした。frontend：React + TailwindCSS + TypeScript backend：Python + Supabase',
+      description: 'Airocoというサービスを利用して、大学の3箇所の教室からCO2濃度、温度、湿度の情報を取得し、独自の閾値によってスコアを決めてSlackで通知するアプリ。同時にDBにデータを登録して、Web上でも過去のデータを閲覧できるようにした。',
       link: 'https://wak8810.github.io/Airoco_Notify_System/',
-      github: 'https://github.com/Wak8810/Airoco_Notify_System'
+      github: 'https://github.com/Wak8810/Airoco_Notify_System',
+      frontend: ['React', 'TailwindCSS', 'TypeScript'],
+      backend: ['Python'],
+      database: ['Supabase(PostgreSQL)']
     },
     {
       imageSrc: TwitteryImg,
       title: 'ツイッター模倣アプリ',
       description: 'この作品は、上記イベントに参加する条件として作成したものである。ツイッター模倣アプリではあるが、投稿、編集、削除などの、最低限の機能しか追加していない。(GitHubリンクのみ)',
       github: 'https://github.com/Wak8810/Twittery_imitation_app',
+      frontend: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+      backend: ['Ruby on Rails'],
+      database: ['SQLite3']
     },
     {
       imageSrc: ReactTodoImg,
       title: 'ReactTodoアプリ',
-      description: 'Reactの勉強で作成したTodoアプリ。React + TailwindCSS + TypeScriptで作成した。',
+      description: 'Reactの勉強で作成したTodoアプリ。',
       link: 'https://wak8810.github.io/React-TodoList/',
-      github: 'https://github.com/Wak8810/React-TodoList'
+      github: 'https://github.com/Wak8810/React-TodoList',
+      frontend: ['React', 'TailwindCSS', 'TypeScript']
     },
     {
       imageSrc: SlidepuzzleImg,
       title: '8パズル・15パズル',
-      description: 'スライドパズルを作成してみた。React + TailwindCSS + TypeScriptで作成した。',
+      description: 'スライドパズルを作成してみた。',
       link: 'https://wak8810.github.io/slidepuzzles-react/',
-      github: 'https://github.com/Wak8810/slidepuzzles-react'
+      github: 'https://github.com/Wak8810/slidepuzzles-react',
+      frontend: ['React', 'TailwindCSS', 'TypeScript']
     },
   ];
 
@@ -61,6 +72,9 @@ const App: React.FC = () => {
             description={work.description}
             link={work.link}
             github={work.github}
+            frontend={work.frontend}
+            backend={work.backend}
+            database={work.database}
           />
         ))}
       </main>
