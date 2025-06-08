@@ -44,11 +44,12 @@ const App: React.FC = () => {
     },
     {
       imageSrc: ReactTodoImg,
-      title: 'ReactTodoアプリ',
-      description: 'Reactの勉強で作成したTodoアプリ。',
-      link: 'https://wak8810.github.io/React-TodoList/',
+      title: 'Todoアプリ',
+      description: 'Reactの勉強で作成したTodoアプリ。(追記)6/8に、RailsAPIを使用して、Todoを実際にDBに登録/削除する機能を追加。このアプリはデプロイするほどの物ではないと思ったため、Pagesでの公開も中止したが、開発環境でのDBへの登録は成功した。',
       github: 'https://github.com/Wak8810/React-TodoList',
-      frontend: ['React', 'TailwindCSS', 'TypeScript']
+      frontend: ['React', 'TailwindCSS', 'TypeScript'],
+      backend: ['Ruby on Rails'],
+      database: ['SQLite3']
     },
     {
       imageSrc: SlidepuzzleImg,
